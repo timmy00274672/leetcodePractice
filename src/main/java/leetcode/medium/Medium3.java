@@ -5,8 +5,8 @@ import java.util.Set;
 
 public class Medium3 {
 	public int lengthOfLongestSubstring(String s) {
-		if (s.length() == 1)
-			return 1;
+		if (s.length() <= 1)
+			return s.length();
 
 		int left = 0, right = 1; // left (inclusive) and right (exclusive) of slice winsow
 		Set<Character> set = new HashSet<Character>();
