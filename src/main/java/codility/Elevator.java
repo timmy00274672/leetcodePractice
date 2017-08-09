@@ -17,8 +17,8 @@ public class Elevator {
 		int stop = 0;
 		// while indexOfAlready < A.length
 		while (indexOfToBeAdd < A.length) {
-			int totalW = 0;
-			int totalP = 0;
+			long totalW = 0;
+			long totalP = 0;
 			Set<Integer> floors = new HashSet<>();
 			// let people in
 			while (indexOfToBeAdd < A.length && totalP + 1 <= X && totalW + A[indexOfToBeAdd] < Y) {
